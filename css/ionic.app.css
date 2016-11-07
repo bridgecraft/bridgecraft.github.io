@@ -9731,7 +9731,8 @@ a.button {
   padding-right: 0px; }
 
 .noBottomPadding {
-  padding-bottom: 0px; }
+  padding-bottom: 0px;
+  margin: 5px; }
 
 .logo {
   color: white !important;

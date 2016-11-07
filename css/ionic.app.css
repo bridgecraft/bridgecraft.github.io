@@ -9724,6 +9724,12 @@ a.button {
   .mainPage-Portrait {
     display: none; } }
 
+.noPadding {
+  padding: 0px; }
+
+.noRightPadding {
+  padding-right: 0px; }
+
 .logo {
   color: white !important;
   line-height: 1.6em;
@@ -9858,6 +9864,27 @@ a.button {
     max-height: none; }
   .header-Landscape .menu-icon {
     display: none; } }
+
+.GalleryImage {
+  position: relative;
+  width: 100%;
+  /* for IE 6 */ }
+  .GalleryImage p {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%; }
+    .GalleryImage p span {
+      color: white;
+      font: bold 24px/45px Helvetica, Sans-Serif;
+      letter-spacing: -1px;
+      background: black;
+      /* fallback color */
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px; }
+      .GalleryImage p span .spacer {
+        padding: 0 5px;
+        background: none; }
 
 body {
   color: #CFB164; }

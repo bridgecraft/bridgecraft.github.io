@@ -10,13 +10,19 @@ angular.module('app.routes', [])
     
   
 
-      .state('page', {
-    url: '/page1',
-    templateUrl: 'templates/page.html',
-    controller: 'pageCtrl'
+      .state('bridgecraftUpholstery', {
+    url: '/home',
+    templateUrl: 'templates/bridgecraftUpholstery.html',
+    controller: 'bridgecraftUpholsteryCtrl'
   })
 
-$urlRouterProvider.otherwise('/page1')
+  .state('products', {
+    url: '/products',
+    templateUrl: 'templates/products.html',
+    controller: 'productsCtrl'
+  })
+
+$urlRouterProvider.otherwise('/home')
 
   
 

@@ -1,34 +1,10 @@
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "../www/lib/ionic/scss";
 @media only screen 
-  and (max-device-width: 2024px) {
-	.header-Landscape {
-		.row {
-			display: table;
-			min-height: 50px;
-		}
-		
-		.title_box {
-			display: table-cell;
-			vertical-align: middle;
-		}
-		
-		.title {
-			font-size: 1em !important;
-			line-height: 1em !important;
-		}
-		
-		.col-20 {
-			display: table-cell;
-			vertical-align: middle;
-		}
-		
-		.header-right {
-			text-align: right;
-		}
-		
-	}
-}
+  and (max-device-width: 2024px) {}
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (orientation: landscape) {}
 @media only screen 
   and (max-device-width: 1024px) 
   and (orientation: landscape) {}
@@ -36,10 +12,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   //and (min-device-width: 768px) 
   and (min-device-width: 1025px) 
   and (orientation: landscape) {}
-@media only screen 
-  //and (min-device-width: 768px) 
-  //and (max-device-width: 1024px) 
-  and (orientation: portrait) {
+@media only screen and (orientation: portrait) {
 	.mainPage-Landscape {
 		display: none;
 	}
@@ -52,29 +25,13 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 	
 }
 @import url('https: //fonts.googleapis.com/css?family=Cinzel+Decorative');
-.header-Landscape {
-	padding: 5px;
-	//margin-bottom: 10px;
-	.row {
-		padding: 0px;
-		background-color: #232322;
-		border-radius: 5px;
-	}
-	
-	.title_box {
-		vertical-align: middle;
-	}
-	
-	.title {
-		font-size: 2em;
-		text-align: center;
-		font-family: 'Cinzel Decorative'!important;
-		color: #ffead3;
-		line-height: 2.5em;
-		margin-bottom: -10px;
-	}
-	
+.logo {
+	color: white !important;
+	line-height: 2em;
+	font-size: 1.6em !important;
+	font-family: 'Cinzel Decorative';
 }
+
 .mainPage-Landscape {
 	padding: 0px 5px 0px 5px;
 	.col-20 {
@@ -97,6 +54,136 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 	padding: 0px 5px 0px 0px;
 	.col-50 {
 		padding: 5px 0px 5px 5px;
+	}
+	
+}
+.header-Landscape {
+	background-color: #262523;
+	margin: 0px 5px 0px 5px;
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+}
+
+.header-Landscape .logoTitle {
+	font-family: 'Cinzel Decorative';
+	font-size: 1.2em;
+}
+
+.header-Landscape ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	background-color: #262523;
+}
+
+.header-Landscape li a {
+	display: block;
+	padding: 20px 20px;
+	border-right: 1px solid #4f4b47;
+	text-decoration: none;
+}
+
+.header-Landscape li a: hover {
+	background-color: #4f4b47;
+}
+
+.header-Landscape .logo {
+	display: block;
+	float: left;
+	font-size: 2em;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+.header-Landscape .dmenu {
+	clear: both;
+	max-height: 0;
+	transition: max-height .2s ease-out;
+	margin-bottom: 5px;
+	a {
+		color: white !important;
+	}
+	
+}
+.header-Landscape .menu-icon {
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	padding: 28px 20px;
+	position: relative;
+	user-select: none;
+}
+
+.header-Landscape .menu-icon .navicon {
+	background: #333;
+	display: block;
+	height: 2px;
+	position: relative;
+	transition: background .2s ease-out;
+	width: 18px;
+}
+
+.header-Landscape .menu-icon .navicon: before,
+.header-Landscape .menu-icon .navicon: after {
+	background: #333;
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+	transition: all .2s ease-out;
+	width: 100%;
+}
+
+.header-Landscape .menu-icon .navicon: before {
+	top: 5px;
+}
+
+.header-Landscape .menu-icon .navicon: after {
+	top: -5px;
+}
+
+.header-Landscape .menu-btn {
+	display: none;
+}
+
+.header-Landscape .menu-btn: checked ~ .dmenu {
+	max-height: 240px;
+}
+
+.header-Landscape .menu-btn: checked ~ .menu-icon .navicon {
+	background: transparent;
+}
+
+.header-Landscape .menu-btn: checked ~ .menu-icon .navicon: before {
+	transform: rotate(-45deg);
+}
+
+.header-Landscape .menu-btn: checked ~ .menu-icon .navicon: after {
+	transform: rotate(45deg);
+}
+
+.header-Landscape .menu-btn: checked ~ .menu-icon: not(.steps) .navicon: before,
+.header-Landscape .menu-btn: checked ~ .menu-icon: not(.steps) .navicon: after {
+	top: 0;
+}
+
+@media (min-width: 48em) {
+	.header-Landscape li {
+		float: left;
+	}
+	
+	.header-Landscape li a {
+		padding: 20px 30px;
+	}
+	
+	.header-Landscape .menu {
+		clear: none;
+		float: right;
+		max-height: none;
+	}
+	
+	.header-Landscape .menu-icon {
+		display: none;
 	}
 	
 }

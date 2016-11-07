@@ -1,0 +1,102 @@
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+@import "../www/lib/ionic/scss";
+@media only screen 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) {}
+@media only screen 
+  //and (min-device-width: 768px) 
+  and (min-device-width: 1025px) 
+  and (orientation: landscape) {}
+@media only screen 
+  //and (min-device-width: 768px) 
+  //and (max-device-width: 1024px) 
+  and (orientation: portrait) {
+	.mainPage-Landscape {
+		display: none;
+	}
+	
+}
+@media only screen and (orientation: landscape) {
+	.mainPage-Portrait {
+		display: none;
+	}
+	
+}
+@import url('https: //fonts.googleapis.com/css?family=Cinzel+Decorative');
+.header-Landscape {
+	padding: 5px;
+	//margin-bottom: 10px;
+	.row {
+		padding: 0px;
+		background-color: #232322;
+		border-radius: 5px;
+	}
+	
+	.title_box {
+		vertical-align: middle;
+	}
+	
+	.title {
+		font-size: 2em;
+		font-weight: bold;
+		text-align: center;
+		font-family: 'Cinzel Decorative'!important;
+		color: #ffead3;
+		line-height: 2.5em;
+		margin-bottom: -10px;
+	}
+	
+}
+.mainPage-Landscape {
+	padding: 0px 5px 0px 5px;
+	.col-20 {
+		padding: 5px 0px 5px 0px;
+	}
+	
+	.col-40 {
+		padding: 5px 0px 5px 5px;
+	}
+	
+}
+.footer-Landscape {
+	padding: 5px;
+	.row {
+		padding: 0px;
+	}
+	
+}
+.mainPage-Portrait {
+	padding: 0px 5px 0px 0px;
+	.col-50 {
+		padding: 5px 0px 5px 5px;
+	}
+	
+}
+ion-view,.pane,.view {
+	background-color: #472E00;
+}
+
+body {
+	color: #CFB164;
+}
+
+body.platform-ios {
+	font-family: Montserrat, sans-serif;
+}
+
+.ionic-body.platform-ios {
+	font-family: Montserrat, sans-serif;
+}
+
+body.platform-android {
+	font-family: Montserrat, sans-serif;
+}
+
+.ionic-body.platform-android {
+	font-family: Montserrat, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.tab-item,input,button,select,textarea {
+	font-family: inherit;
+}
+

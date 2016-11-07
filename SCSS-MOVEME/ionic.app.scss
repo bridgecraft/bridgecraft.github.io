@@ -27,7 +27,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import url('https: //fonts.googleapis.com/css?family=Cinzel+Decorative');
 .logo {
 	color: white !important;
-	line-height: 2em;
+	line-height: 1.6em;
 	font-size: 1.6em !important;
 	font-family: 'Cinzel Decorative';
 }
@@ -187,10 +187,6 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 	}
 	
 }
-ion-view,.pane,.view {
-	background-color: #472E00;
-}
-
 body {
 	color: #CFB164;
 }

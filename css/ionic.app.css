@@ -9730,6 +9730,9 @@ a.button {
 .noRightPadding {
   padding-right: 0px; }
 
+.noBottomPadding {
+  padding-bottom: 0px; }
+
 .logo {
   color: white !important;
   line-height: 1.6em;

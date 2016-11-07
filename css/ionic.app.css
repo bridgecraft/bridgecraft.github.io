@@ -9716,6 +9716,22 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+@media only screen and (max-device-width: 2024px) {
+  .header-Landscape .row {
+    display: table;
+    min-height: 50px; }
+  .header-Landscape .title_box {
+    display: table-cell;
+    vertical-align: middle; }
+  .header-Landscape .title {
+    font-size: 1em !important;
+    line-height: 1em !important; }
+  .header-Landscape .col-20 {
+    display: table-cell;
+    vertical-align: middle; }
+  .header-Landscape .header-right {
+    text-align: right; } }
+
 @media only screen and (orientation: portrait) {
   .mainPage-Landscape {
     display: none; } }
@@ -9734,7 +9750,6 @@ a.button {
     vertical-align: middle; }
   .header-Landscape .title {
     font-size: 2em;
-    font-weight: bold;
     text-align: center;
     font-family: "Cinzel Decorative" !important;
     color: #ffead3;

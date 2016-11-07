@@ -1,6 +1,35 @@
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "../www/lib/ionic/scss";
 @media only screen 
+  and (max-device-width: 2024px) {
+	.header-Landscape {
+		.row {
+			display: table;
+			min-height: 50px;
+		}
+		
+		.title_box {
+			display: table-cell;
+			vertical-align: middle;
+		}
+		
+		.title {
+			font-size: 1em !important;
+			line-height: 1em !important;
+		}
+		
+		.col-20 {
+			display: table-cell;
+			vertical-align: middle;
+		}
+		
+		.header-right {
+			text-align: right;
+		}
+		
+	}
+}
+@media only screen 
   and (max-device-width: 1024px) 
   and (orientation: landscape) {}
 @media only screen 
@@ -38,7 +67,6 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 	
 	.title {
 		font-size: 2em;
-		font-weight: bold;
 		text-align: center;
 		font-family: 'Cinzel Decorative'!important;
 		color: #ffead3;

@@ -219,9 +219,10 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 /////////////////////////GALLERY IMAGES
 .GalleryImage {
 	position: relative;
-	width: 100%;
+	// width: 100%;
 	/* for IE 6 */
 	   margin-bottom: 6px;
+	margin-right: -1px;
 	p {
 		position: absolute;
 		top: 5px;

@@ -13,6 +13,28 @@ function ($scope, $stateParams) {
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $stateParams) {
 
-
+    $scope.gallery = [];
+    $scope.gallery = [{
+        line1: 'Bedroom',
+        line2: 'Fun'
+    },{
+        line1: 'Bedroom',
+        line2: 'Fun'
+    },{
+        line1: 'Bedroom',
+        line2: 'Fun'
+    },{
+        line1: 'Bedroom',
+        line2: 'Fun'
+    },{
+        line1: 'Bedroom',
+        line2: 'Fun'
+    },{
+        line1: 'Bedroom',
+        line2: 'Fun'
+    },{
+        line1: 'Bedroom',
+        line2: 'Fun'
+    },]
 }])
  
